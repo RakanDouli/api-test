@@ -2,7 +2,7 @@ import { Route, Switch } from "react-router";
 import Nav from "./components/Nav";
 import About from "./pages/About";
 import Home from "./pages/Home";
-import Movielist from "./pages/movielist";
+import Gamelist from "./pages/Gamelist";
 import "./style/App.scss";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Nav />
       <Switch>
-        <Route path="/movieList" component={Movielist} />
+        <Route path="/Gamelist" component={Gamelist} />
         <Route path="/about" component={About} />
         <Route exact path="/" component={Home} />
         <Route />
