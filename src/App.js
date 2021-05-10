@@ -4,12 +4,14 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Gamelist from "./pages/Gamelist";
 import "./style/App.scss";
+import Gamepage from "./components/Gamepage";
 
 function App() {
   return (
     <div className="App">
       <Nav />
       <Switch>
+        <Route path="/Gamelist/:id" component={Gamepage} />
         <Route path="/Gamelist" component={Gamelist} />
         <Route path="/about" component={About} />
         <Route exact path="/" component={Home} />
